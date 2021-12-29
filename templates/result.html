@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Generated Color Palette
+{% endblock %}
+
+{% block content %}
+<div class="main">
+    <img src="{{image}}" class='result-image'>
+    <table class='table'>
+        <tr>
+            <th>Color</th>
+            <th>Hex Code</th>
+            <th>Percentage of Color</th>
+        </tr>
+        {% for color, count in colors.items() %}
+        <tr>
+            <td>
+                <button class='box' style="background-color:{{color}};" onclick="hex_copied('{{color}}')"></button>
+            </td>
+            <td>{{color}}</td>
+            <td>{{count}}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{url_for('home')}}" class='btn btn-outline-danger'>Go Back</a>
+</div>
+{% endblock %}

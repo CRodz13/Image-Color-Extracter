@@ -1,0 +1,44 @@
+body{
+    height:100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+main{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwp-content%2Fuploads%2F2013%2F09%2Fbg-9-full.jpg&f=1&nofb=1');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.main{
+    padding:50px;
+    text-align: center;
+}
+
+.flash{
+    color:red;
+}
+
+input{
+    margin-top:15px;
+}
+
+.result-image{
+    max-width:800px;
+    max-height:600px;
+    margin-bottom:20px;
+}
+
+.box{
+    width:25px;
+    height:25px;
+    border:0.1px solid black;
+}
+
+.link{
+    text-decoration: none;
+}
